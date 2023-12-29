@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Access the special "github" object to get information about the environment
-    if: github.event_name == "pull_request"
+    if: github.event_name == 'pull_request'
 
     # Specify the job has to run after the "build" job has run
     needs: build
